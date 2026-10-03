@@ -1,0 +1,14 @@
+{
+    "Simple C Program": {
+        "prefix": "cp",
+        "body": [
+            "#include <stdio.h>",
+            "",
+            "int main() {",
+            "  $0",
+            "  return 0;",
+            "}"
+        ],
+        "description": "Simple C main function with 2-space indentation"
+    }
+}

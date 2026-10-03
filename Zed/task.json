@@ -1,0 +1,53 @@
+[
+  {
+      "label": "Run C++ File",
+      "command": "g++ \"$ZED_FILE\" -o \"$ZED_STEM.exe\"; if ($?) { & \".\\$ZED_STEM.exe\" }",
+      "cwd": "$ZED_DIRNAME",
+      "use_new_terminal": false,
+      "allow_concurrent_runs": true,
+      "reveal": "always",
+      "hide": "never",
+      "shell": {
+          "with_arguments": {
+              "program": "pwsh.exe",
+              "args": [
+                  "-NoExit"
+              ]
+          }
+      }
+  },
+  {
+      "label": "Run C File",
+      "command": "gcc \"$ZED_FILE\" -o \"$ZED_STEM.exe\"; if ($?) { & \".\\$ZED_STEM.exe\" }",
+      "cwd": "$ZED_DIRNAME",
+      "use_new_terminal": false,
+      "allow_concurrent_runs": true,
+      "reveal": "always",
+      "hide": "never",
+      "shell": {
+          "with_arguments": {
+              "program": "pwsh.exe",
+              "args": [
+                  "-NoExit"
+              ]
+          }
+      }
+  },
+  {
+      "label": "Run Python File",
+      "command": "python \"$ZED_FILE\"",
+      "cwd": "$ZED_DIRNAME",
+      "use_new_terminal": false,
+      "allow_concurrent_runs": true,
+      "reveal": "always",
+      "hide": "never",
+      "shell": {
+          "with_arguments": {
+              "program": "pwsh.exe",
+              "args": [
+                  "-NoExit"
+              ]
+          }
+      }
+  }
+]

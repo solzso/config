@@ -1,0 +1,47 @@
+[
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-alt-v": "workspace::ToggleVimMode"
+        }
+    },
+    {
+        "context": "Editor && vim_mode == insert",
+        "bindings": {
+            "j k": "vim::NormalBefore"
+        }
+    },
+    {
+        "context": "Editor && extension == cpp",
+        "bindings": {
+            "ctrl-alt-n": [
+                "task::Spawn",
+                {
+                    "task_name": "Run C++ File"
+                }
+            ]
+        }
+    },
+    {
+        "context": "Editor && extension == c",
+        "bindings": {
+            "ctrl-alt-n": [
+                "task::Spawn",
+                {
+                    "task_name": "Run C File"
+                }
+            ]
+        }
+    },
+    {
+        "context": "Editor && extension == py",
+        "bindings": {
+            "ctrl-alt-n": [
+                "task::Spawn",
+                {
+                    "task_name": "Run Python File"
+                }
+            ]
+        }
+    }
+]

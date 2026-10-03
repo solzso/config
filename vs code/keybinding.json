@@ -1,0 +1,10 @@
+[
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "ctrl+k ctrl+n",
+    "command": "explorer.newFolder"
+  }
+]
