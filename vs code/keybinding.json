@@ -4,7 +4,7 @@
     "command": "explorer.newFile"
   },
   {
-    "key": "ctrl+k ctrl+n",
+    "key": "alt+n",
     "command": "explorer.newFolder"
   }
 ]
