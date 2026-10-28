@@ -43,5 +43,28 @@
                 }
             ]
         }
-    }
+    },
+    {
+        "context": "Editor && jupyter",
+        "bindings": {
+            "shift-enter": "repl::Run"
+        }
+    },
+    {
+        "bindings": {
+            "ctrl-shift-enter": "repl::ClearOutputs"
+        }
+    }, 
+    {
+      "context": "Editor && mode == full",
+      "bindings": {
+        "ctrl-shift-enter": "editor::NewlineAbove"
+      }
+    }, 
+      {
+        "context": "Workspace",
+        "bindings": {
+          "ctrl-1": "editor::ToggleFocus"
+        }
+      }
 ]

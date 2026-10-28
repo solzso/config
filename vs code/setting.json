@@ -1,0 +1,49 @@
+{
+    "workbench.iconTheme": "catppuccin-mocha",
+    "files.autoSave": "afterDelay",
+    "editor.tabSize": 2,
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true, 
+    // "editor.fontFamily": "CaskaydiaCove Nerd Font Propo",
+    "editor.fontFamily": "FiraCode Nerd Font Propo",
+    // "editor.fontFamily": "SauceCodePro Nerd Font Propo",
+    // "editor.fontFamily": "GoogleSansCode Nerd Font Propo",
+
+    // "editor.fontFamily": "JetBrainsMono Nerd Font Propo",
+    // "editor.fontFamily": "JetBrainsMonoNL Nerd Font Propo",    
+    // "editor.fontLigatures": true,
+    "window.commandCenter": false,
+    "editor.wordWrap": "on",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "jupyter.interactiveWindow.textEditor.executeSelection": true,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+
+  "editor.inlineSuggest.enabled": false,
+  "github.copilot.enable": {
+      "*": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "network.meteredConnection": "off",
+  "workbench.editor.empty.hint": "hidden",
+  // "workbench.sideBar.location": "right",
+  "explorer.confirmDragAndDrop": false,
+"git.openRepositoryInParentFolders": "never",
+"workbench.colorTheme": "Lilt Pro",
+"workbench.preferredHighContrastColorTheme": "Pink Cat Boo",
+
+
+ // for cmd flags
+
+// "code-runner.executorMap": {
+//   "cpp": "cd /d \"$dir\" && g++ \"$fileName\" -o \"$fileNameWithoutExt.exe\" -std=gnu++20 -O2 -pipe -Wall -Wextra -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -DLOCAL && \".\\$fileNameWithoutExt.exe\""
+// }
+
+// for powershell flag 
+"code-runner.executorMap": {
+  "cpp": "Set-Location -LiteralPath \"$dir\"; if ($?) { g++ \"$fileName\" -o \"$fileNameWithoutExt.exe\" -std=gnu++20 -O2 -pipe -Wall -Wextra -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -DLOCAL; if ($LASTEXITCODE -eq 0) { & \".\\$fileNameWithoutExt.exe\" } }"
+}
+
+
+}
