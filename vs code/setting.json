@@ -37,13 +37,12 @@
  // for cmd flags
 
 // "code-runner.executorMap": {
-//   "cpp": "cd /d \"$dir\" && g++ \"$fileName\" -o \"$fileNameWithoutExt.exe\" -std=gnu++20 -O2 -pipe -Wall -Wextra -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -DLOCAL && \".\\$fileNameWithoutExt.exe\""
+//     "cpp": "cd /d $dir && g++ \"$fileName\" -o \"$fileNameWithoutExt.exe\" -std=gnu++20 -O2 -pipe -Wall -Wextra -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -DLOCAL && \"$fileNameWithoutExt.exe\""
 // }
 
 // for powershell flag 
+
 "code-runner.executorMap": {
-  "cpp": "Set-Location -LiteralPath \"$dir\"; if ($?) { g++ \"$fileName\" -o \"$fileNameWithoutExt.exe\" -std=gnu++20 -O2 -pipe -Wall -Wextra -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -DLOCAL; if ($LASTEXITCODE -eq 0) { & \".\\$fileNameWithoutExt.exe\" } }"
+    "cpp": "Set-Location -LiteralPath $dir; g++ \"$fileName\" -o \"$fileNameWithoutExt.exe\" -std=gnu++20 -O2 -pipe -Wall -Wextra -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -DLOCAL; if ($LASTEXITCODE -eq 0) { & \".\\$fileNameWithoutExt.exe\" }"
 }
-
-
 }
