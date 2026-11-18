@@ -1,4 +1,4 @@
-oh-my-posh init pwsh --config "C:\Users\shanto\OneDrive\Terminal Theme\1_shell.json" | Invoke-Expression
+oh-my-posh init pwsh --config "C:\Users\shanto\OneDrive\config\Terminal Theme\1_shell.json" | Invoke-Expression
 
 Set-PSReadLineOption -Colors @{
     Command = "#f38ba8"
@@ -16,5 +16,5 @@ Clear-Host
 
 # Force Fastfetch to use YOUR config every time (bypass path confusion)
 if (Get-Command fastfetch -ErrorAction SilentlyContinue) {
-    fastfetch -c "C:/Users/shanto/.config/fastfetch/config.jsonc"
+    fastfetch -c "C:\Users\shanto\OneDrive\config\FastFetch\config.jsonc"
 }
